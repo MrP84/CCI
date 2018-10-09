@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Un formulaire et puis c'est tout">
+  <meta name="author" content="le Suisse du Web">
+  <title>Formulaire</title>
+
+  <link href="styleform.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="main-title">Formulaire pour faire joli</h1>
+  </header>
+    <div class="container">
+      <form action="recup.php" method="POST" enctype="multipart/form-data">
+        <div class="nom-prenom">
+          <p>
+            <label for="nom">Votre nom : </label>
+            <input type="input" name="nom" class="input" id="nom" required aria-required="true"> <!-- aria-required="true" est destiné à la synthèse vocale -->
+          </p>
+
+          <p>
+            <label for="prenom">Votre prénom : </label>
+            <input type="input" name="prenom" class="input" id="prenom" required>
+          </p>
+        </div>
+        <div class="date-pwd">
+          <p>
+            <label for="pwd">Mot de passe : </label>
+            <input type="password" name="password" class="input" id="pwd" required>
+          </p>
+
+          <p>
+            <label for="date">Date de naissance : </label>
+            <input type="date" name="date" class="input" id="date"><br/>
+          </p>
+        </div>
+        <p>
+          <label for="genre">Vous êtes un humain ?</label><br/>
+          <input type="checkbox" name="genre" class="genre" value="homme">Oui<br/>
+        </p>
+
+        <p>
+          <label for="pays">Où souhaitez-vous partir en vacances ?</label>
+          <select id="pays" name="pays">
+            <optgroup label="Europe">
+              <option value="fr">France</option>
+              <option value="gb">Royaume-Uni</option>
+              <option value="sw" selected>Suisse</option>
+            </optgroup>
+            <optgroup label="Amérique">
+              <option value="us">Etats-Unis</option>
+              <option value="mx">Mexique</option>
+            </optgroup>
+            <optgroup label="Plus loin">
+              <option value="au">Australie</option>
+              <option value="th">Thaïlande</option>
+            </optgroup>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Combien de temps passez-vous sur Internet ?</legend>
+          <input type="radio" name="internet" value="minusOne" id="minusOne" checked><label for="minusOne">Moins d'une heure</label><br/>
+          <input type="radio" name="internet" value="minusTwo" id="minusTwo"><label for="minusTwo">Moins de deux heures</label><br/>
+          <input type="radio" name="internet" value="plusTwo" id="plusTwo"><label for="plusTwo">Plus de deux heures</label><br/>
+          <input type="radio" name="internet" value="plusFour" id="plusFour"><label for="plusFour">Plus de quatre heures</label><br/>
+        </fieldset>
+
+        <p>
+          <label for="message">Laissez votre message :</label>
+          <textarea name="message" class="message" id="message" role="textbox" aria-multiline="true"></textarea> <!-- le role et aria-multiline -->
+        </p>
+
+        <p>
+          <input type="submit" name="envoi" value="Soumettre votre formulaire" class="bouton">
+        </p>
+
+      </form>
+    </div>
+
+    <p>Retour vers <a href="../../index.html">l'accueil</a></p>
+
+<footer>
+  <div class="foot-top">Contacts :<hr></div>
+    <div class="foot-middle">
+    <div class="mail">Par <a href="mailto:gprov@hotmail.fr">mail</a></div>
+    <div class="tel">06.75.43.28.01</div>
+    <div class="adress">8, rue des plantes en pot<br/>05000 GAP<br/>SUISSE</div>
+  </div>
+</footer>
+  
+</body>
+
+</html>
