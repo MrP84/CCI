@@ -2,8 +2,24 @@
 	display: none;
 }
 
+#btn_mc_tags {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+#btn_mc_tags div {
+	margin-left: 20px;
+	padding-top: 20px;
+}
+
+#btn_mc_tags div i {
+	font-size: 30px;
+}
+
 .une_video {
   width: 320px;
+  margin-bottom: 20px; 
 }
 
 .une_video a, .une_video a:hover{
