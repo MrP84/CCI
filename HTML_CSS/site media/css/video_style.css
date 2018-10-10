@@ -1,0 +1,19 @@
+.is-hidden {
+	display: none;
+}
+
+.une_video {
+  width: 320px;
+}
+
+.une_video a, .une_video a:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+.une_video .ico_defaut {
+	font-size: 180px;
+	display: flex;
+	justify-content: center;
+	
+}
